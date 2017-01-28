@@ -43,6 +43,7 @@
           {%- endif -%}
       tags:
         - always
+      ignore_errors: yes
     - include: common-tasks/os-lxc-container-setup.yml
       static: no
       vars:

@@ -11,4 +11,7 @@
 ###
 pip==9.0.1
 setuptools==32.3.1
+#setuptools==34.0.1
 wheel==0.29.0
+#pyparsing==2.1.8
+#packaging==16.7
