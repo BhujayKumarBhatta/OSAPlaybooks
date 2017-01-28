@@ -4,7 +4,7 @@
   tasks:
   - name: Mount DVD read-only
     mount:
-       path: /var/lib/images
+       name: /var/lib/images
        src: /10.0.0.15:/images
        state: unmounted
    
