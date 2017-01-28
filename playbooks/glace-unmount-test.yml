@@ -1,0 +1,11 @@
+---
+- hosts: infra1_glance_container-5e037adb
+  user: root
+  tasks:
+  - name: Inserted by Bhujay*******************to unmount nfs mount points
+    mount:
+      name: /var/lib/glance/images/
+      src: /10.0.0.15:/images
+      fstype: nfs
+      state: unmounted
+   
