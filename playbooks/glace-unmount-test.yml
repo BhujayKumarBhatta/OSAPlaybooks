@@ -1,5 +1,5 @@
 ---
-- hosts: infra1_glance_container-5e037adb
+- hosts: glance_all
   user: root
   tasks:
   - name: Inserted by Bhujay*******************to unmount nfs mount points
