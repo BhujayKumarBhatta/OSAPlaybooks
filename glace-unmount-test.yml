@@ -1,0 +1,10 @@
+---
+- hosts: cinder_volume
+  user: root
+  tasks:
+  - name: Mount DVD read-only
+    mount:
+       path: /var/lib/images
+       src: /10.0.0.15:/images
+       state: unmounted
+   
