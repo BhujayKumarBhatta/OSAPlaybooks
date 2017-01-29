@@ -15,7 +15,7 @@
 
 - include: unbound-install.yml
 - include: repo-install.yml
-#- include: haproxy-install.yml
+- include: haproxy-install.yml
 - include: memcached-install.yml
 - include: galera-install.yml
 - include: rabbitmq-install.yml
