@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- include: os-keystone-install.yml
-- include: os-glance-install.yml
+#- include: os-keystone-install.yml
+#- include: os-glance-install.yml
 - include: os-cinder-install.yml
 - include: os-nova-install.yml
 - include: os-neutron-install.yml
