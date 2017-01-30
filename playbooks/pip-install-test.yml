@@ -1,0 +1,9 @@
+---
+- hosts: repo_all
+  remote_user: root
+  tasks:
+  - name: testing packing instalation by pip module
+  pip:
+    name: packaging
+    version: 16.8
+    state: present
