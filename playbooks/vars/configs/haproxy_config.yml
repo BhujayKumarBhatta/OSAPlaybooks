@@ -174,7 +174,8 @@ haproxy_default_services:
   - service:
       haproxy_service_name: cinder_api
       haproxy_backend_nodes: "{{ groups['cinder_api'] | default([]) }}"
-      haproxy_ssl: "{{ haproxy_ssl }}"
+      #haproxy_ssl: "{{ haproxy_ssl }}"
+      haproxy_ssl: false
       haproxy_port: 8776
       haproxy_balance_type: http
       haproxy_backend_options:
