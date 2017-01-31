@@ -30,8 +30,8 @@ haproxy_default_services:
   - service:
       haproxy_service_name: repo_git
       haproxy_backend_nodes: "{{ groups['repo_all'] | default([]) }}"
-      #haproxy_ssl: "{{ haproxy_ssl }}"
-      haproxy_ssl: false
+      haproxy_ssl: "{{ haproxy_ssl }}"
+      #haproxy_ssl: false
       haproxy_port: 9418
       haproxy_balance_type: tcp
       haproxy_backend_options:
@@ -43,8 +43,8 @@ haproxy_default_services:
   - service:
       haproxy_service_name: repo_all
       haproxy_backend_nodes: "{{ groups['repo_all'] | default([]) }}"
-      #haproxy_ssl: "{{ haproxy_ssl }}"
-      haproxy_ssl: false
+      haproxy_ssl: "{{ haproxy_ssl }}"
+      #haproxy_ssl: false
       haproxy_port: 8181
       haproxy_balance_type: http
       haproxy_backend_options:
@@ -175,8 +175,8 @@ haproxy_default_services:
   - service:
       haproxy_service_name: cinder_api
       haproxy_backend_nodes: "{{ groups['cinder_api'] | default([]) }}"
-      #haproxy_ssl: "{{ haproxy_ssl }}"
-      haproxy_ssl: false
+      haproxy_ssl: "{{ haproxy_ssl }}"
+      #haproxy_ssl: false
       haproxy_port: 8776
       haproxy_balance_type: http
       haproxy_backend_options:
