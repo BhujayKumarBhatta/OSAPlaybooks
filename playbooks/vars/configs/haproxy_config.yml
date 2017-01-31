@@ -30,7 +30,8 @@ haproxy_default_services:
   - service:
       haproxy_service_name: repo_git
       haproxy_backend_nodes: "{{ groups['repo_all'] | default([]) }}"
-      haproxy_ssl: "{{ haproxy_ssl }}"
+      #haproxy_ssl: "{{ haproxy_ssl }}"
+      haproxy_ssl: false
       haproxy_port: 9418
       haproxy_balance_type: tcp
       haproxy_backend_options:
